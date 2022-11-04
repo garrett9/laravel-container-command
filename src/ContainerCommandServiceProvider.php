@@ -2,7 +2,6 @@
 
 namespace Garrett9\ContainerCommand;
 
-use Garrett9\ContainerCommand\Commands\ContainerCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -17,7 +16,6 @@ class ContainerCommandServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-container-command')
-            ->hasConfigFile()
-            ->hasCommand(ContainerCommand::class);
+            ->hasConfigFile();
     }
 }
